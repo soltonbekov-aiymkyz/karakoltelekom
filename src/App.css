@@ -1,3 +1,22 @@
-.App {
-  text-align: center;
+
+html, body {
+  margin: 0;
+  background-color: rgb(200, 233, 248);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.App .ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color: rgb(235, 213, 224);
+}
+.App .ul li {
+  list-style-type: none;
+}
+.App .ulNav li a {
+  text-decoration: none;
 }
