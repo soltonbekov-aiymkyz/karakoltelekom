@@ -1,12 +1,12 @@
 import classes from "./Home.module.css"
 const Home = () => {
     return (
-        <div className={classes.Home1}>
+        <div className={classes.Home}>
             <section>
                 <div className={classes.paragraph}>
                     <h1>products company.</h1>
                     <p>
-                        Also see How to Write an About Us Page for information about creating a story for your website, which you can use in your company presentation.
+                       Also see How to Write an About Us Page for information about creating a story for your website, which you can use in your company presentation.
                   </p>
                     <button className={classes.buttonHome}>sign up</button>
                 </div>
