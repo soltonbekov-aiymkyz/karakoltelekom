@@ -12,6 +12,11 @@ const Home = () => {
     <p>Legal addrress:722200,  Каракол ш,  Гебзе к, 124, телефон 0 (3922) 5-32-77; факс 0 (3922) 5-00-13, е-mail: issyk-kul_telecom@kt.kg</p>
         </header>
 
+
+
+
+
+
     <footer>Asource: http://kt.kg/about_us/contact/issyk_kul_branch1/
 ОАО КыргызТелеком</footer>
     </div> );
