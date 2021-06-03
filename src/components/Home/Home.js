@@ -32,13 +32,18 @@
 
 import classes from "./Home.module.css"
 const Home = () => {
-    return ( <div className={classes.Home}>
+    return (
+         <div className={classes.Home}>
         <header>
-            <h1>Welcome to YouTube v.2022</h1>
-            <p>In this update we made new design, new functions, new features and others. You can discover more details about update in Updates page. If you need help click support button.</p>
+            <h1>Welcome to KYRGYZTELEKOM</h1>
+            <p>CEO:Kelgenbaev Absamat Abdymanapovich  </p>
+            <p>head of director:Ulushbaev Baktybek Adsanakunovich </p>
+    <p>chief accontant:Sydykov Tilek Bakalbekovich  </p>
+    <p>Legal addrress:722200,  Каракол ш,  Гебзе к, 124, телефон 0 (3922) 5-32-77; факс 0 (3922) 5-00-13, е-mail: issyk-kul_telecom@kt.kg</p>
         </header>
-    
-    
+
+    <footer>Asource:<a> http://kt.kg/about_us/contact/issyk_kul_branch1/</a>
+ОАО КыргызТелеком</footer>
     </div> );
 }
  
