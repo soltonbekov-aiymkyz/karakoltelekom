@@ -23,9 +23,13 @@ function App() {
           exact
             activeStyle={activeLinkStyle}
             activeClassName="activeLink"
-            to="/"
-            >home </NavLink>
+            to="/" >home </NavLink>
         </li>
+
+      
+
+
+
         {/* <li>
           <NavLink
             activeStyle={activeLinkStyle}
@@ -62,6 +66,8 @@ function App() {
 
       </ul>
       <Switch>
+      {/* path: шаблон адреса, с которым будет сопоставляться запрошенный адрес URL
+   component - тот компонент, который отвечает за обработку запроса по этому маршруту */}
         <Route path="/about" component={About} />
         {/* <Route path="/contacts" component={Contacts} />    
         <Route path="/jackets" component={Jackets} />    
@@ -73,6 +79,7 @@ function App() {
         <Route path="/" component={NotFound} />      
         {/* <Redirect to="/"  />  */}
       </Switch>
+      {/* для выбора маршрута определен объект Switch. Он позволяет выбрать первый попавшийся маршрут и его использовать для обработки. */}
     </div>
   );
 }
