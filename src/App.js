@@ -3,9 +3,11 @@ import { Route, Switch } from 'react-router';
 import { NavLink } from "react-router-dom";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
- import NotFound from "./components/NotFound/NotFound";
- 
+//  import NotFound from "./components/NotFound/NotFound";
 import Product from "./components/Product/Product";
+// import itlogo from './images/logo.svg'
+import logo from './images/itlogo.png'
+
 import "./App.css"
 function App() {
   const activeLinkStyle = {
@@ -13,6 +15,7 @@ function App() {
   };
   return (
     <div className="App">
+       <img src = {logo} alt = ""/>
       <ul className="ul">
         <li>
           <NavLink
@@ -28,13 +31,8 @@ function App() {
             to="/about">about </NavLink>
         </li>
      
-        <li>
-          <NavLink
-            activeStyle={activeLinkStyle}
-            activeClassName="activeLink"
-            to="/product">product</NavLink>
-        </li>
-
+       
+        <li><NavLink exact activeClassName="activeLink" activeStyle = {activeLinkStyle} to="/product">Product</NavLink></li>
 
 
       </ul>
@@ -43,8 +41,9 @@ function App() {
    component - тот компонент, который отвечает за обработку запроса по этому маршруту */}
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
-        <Route path="/" component={NotFound} />
-        <Route path="/product" component={Product} />      
+        {/* <Route path="/" component={NotFound} /> */}
+     
+        <Route exact path="/product" component={Product} />     
       </Switch>
 
       {/* для выбора маршрута определен объект Switch. Он позволяет выбрать первый попавшийся маршрут и его использовать для обработки. */}

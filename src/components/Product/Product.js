@@ -2,7 +2,7 @@ import classes from "./Product.module.css";
 // import Johnny from "../../images/Jonni.jpg";
 
 import Johnny from "../../images/ittashkent.jpg";
-const Home = () => {
+const Product = () => {
   return (
     <div className={classes.Home}>
       <h1>Home</h1>
