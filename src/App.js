@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
  import NotFound from "./components/NotFound/NotFound";
+ 
+import Product from "./components/Product/Product";
 import "./App.css"
 function App() {
   const activeLinkStyle = {
@@ -26,14 +28,25 @@ function App() {
             to="/about">about </NavLink>
         </li>
      
+        <li>
+          <NavLink
+            activeStyle={activeLinkStyle}
+            activeClassName="activeLink"
+            to="/product">product</NavLink>
+        </li>
+
+
+
       </ul>
       <Switch>
       {/* path: шаблон адреса, с которым будет сопоставляться запрошенный адрес URL
    component - тот компонент, который отвечает за обработку запроса по этому маршруту */}
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
-        <Route path="/" component={NotFound} />      
+        <Route path="/" component={NotFound} />
+        <Route path="/product" component={Product} />      
       </Switch>
+
       {/* для выбора маршрута определен объект Switch. Он позволяет выбрать первый попавшийся маршрут и его использовать для обработки. */}
     </div>
   );
