@@ -2,14 +2,8 @@
 import { Route, Switch } from 'react-router';
 import { NavLink } from "react-router-dom";
 import About from "./components/About/About";
-// import Contacts from "./components/Contacts/Contacts"
 import Home from "./components/Home/Home";
  import NotFound from "./components/NotFound/NotFound";
-// import Posts from "./components/Posts/Posts";
-// import Shop from "./components/Shop/Shop";
-// import Jackets from "./components/Jackets/Jackets"
-// import Products from './components/Products/Products';
-// import Pants from './components/Pants/Pants';
 import "./App.css"
 function App() {
   const activeLinkStyle = {
@@ -24,66 +18,81 @@ function App() {
             activeStyle={activeLinkStyle}
             activeClassName="activeLink"
             to="/" >home </NavLink>
-        </li>
-
-      
-
-
-
-        {/* <li>
-          <NavLink
-            activeStyle={activeLinkStyle}
-            activeClassName="activeLink"
-            to="/contacts">contacts </NavLink>
-        </li> */}
+        </li>      
         <li>
           <NavLink
             activeStyle={activeLinkStyle}
             activeClassName="activeLink"
             to="/about">about </NavLink>
         </li>
-        {/* <li>
-          <NavLink
-            activeStyle={activeLinkStyle}
-            activeClassName="activeLink"
-            to="/posts">Posts </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeStyle={activeLinkStyle}
-            activeClassName="activeLink"
-            to="/shop">shop </NavLink>
-        </li>
-      
-        <li>
-          <NavLink
-            activeStyle={activeLinkStyle}
-            activeClassName="activeLink"
-            to="/jackets">jackets </NavLink>
-        </li>
-        <li><NavLink activeClassName="activeLink" activeStyle = {activeLinkStyle} to="/products">Prodocts</NavLink></li>
-        <li><NavLink activeClassName="activeLink" activeStyle = {activeLinkStyle} to="/pants">Pants</NavLink></li> */}
-
+     
       </ul>
       <Switch>
       {/* path: шаблон адреса, с которым будет сопоставляться запрошенный адрес URL
    component - тот компонент, который отвечает за обработку запроса по этому маршруту */}
         <Route path="/about" component={About} />
-        {/* <Route path="/contacts" component={Contacts} />    
-        <Route path="/jackets" component={Jackets} />    
-        <Route path="/posts" component={Posts} />
-        <Route path="/shop" component={Shop} />
-        <Route path="/products" component={Products} />    
-        <Route path="/pants" component={Pants} /> */}
         <Route exact path="/" component={Home} />
         <Route path="/" component={NotFound} />      
-        {/* <Redirect to="/"  />  */}
       </Switch>
       {/* для выбора маршрута определен объект Switch. Он позволяет выбрать первый попавшийся маршрут и его использовать для обработки. */}
     </div>
   );
 }
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //brouzer router use 
 //exact delaet atribut obizatelnym
@@ -98,3 +107,4 @@ export default App;
 //reduccer function prinimaet 2 parsametr 1 sostoyanie 
 //1 action 
 //action polya type kak sostoyanie budet izmenyatsya
+//actions type for this messages and i don't now how to say it 
