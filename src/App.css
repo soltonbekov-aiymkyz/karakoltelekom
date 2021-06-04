@@ -12,7 +12,7 @@ html, body {
   margin: 0;
   width: 100%;
   min-height: 75px;
-  background-color: rgb(156, 157, 243);
+  background-color: rgb(145, 148, 160);
 }
 .App .ul li {
   list-style-type: none;
@@ -22,11 +22,18 @@ html, body {
 }
 
 
-.img {
+
+ .logo {
   width: 60px;
   height: 60px;
   background-size: cover;
+  margin-left: 0;
 }
+/* 
+//  today is my 3rd day in a internship  this day was a wonderful our company come 1 employer he is a man with blue eyes and toller 
+and he is rushan .Now i don''t now stay here or not i like moving on in the Tashken in a real It company 
+and a Vasilii come in our company and he is silent very silent i don't like this types of persons  
+*/
   
 /* 
 * {
