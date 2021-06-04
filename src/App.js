@@ -9,7 +9,6 @@ import Product from "./components/Product/Product";
 import logo from './images/itlogo.png'
 import "./App.css"
 
-import Posts from './components/Posts/Posts';
 function App() {
   const activeLinkStyle = {
     fontWeight: 'bold',
@@ -34,14 +33,7 @@ function App() {
             to="/about">about </NavLink>
         </li>
      
-        <li>
-            <NavLink
-              className="NavLink"
-              activeClassName="activeLink"
-              to="/posts">
-              Posts
-            </NavLink>
-          </li>
+       
 
 
         <li><NavLink exact activeClassName="activeLink" activeStyle = {activeLinkStyle} to="/product">Product</NavLink></li>
@@ -54,7 +46,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
         {/* <Route path="/" component={NotFound} /> */}
-        <Route path="/posts" component={Posts} />
+        {/* <Route path="/posts" component={Posts} /> */}
         <Route exact path="/product" component={Product} />     
       </Switch>
 
